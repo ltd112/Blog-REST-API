@@ -1,4 +1,4 @@
-package com.dat.Blog_REST_API.payload;
+package com.dat.Blog_REST_API.payload.request;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;

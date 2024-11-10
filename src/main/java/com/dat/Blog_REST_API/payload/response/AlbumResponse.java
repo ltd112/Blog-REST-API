@@ -1,21 +1,20 @@
-package com.dat.Blog_REST_API.payload;
+package com.dat.Blog_REST_API.payload.response;
 
 import com.dat.Blog_REST_API.model.Photo;
 import com.dat.Blog_REST_API.model.user.User;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.dat.Blog_REST_API.payload.UserDateAuditPayload;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class AlbumResponse extends UserDateAuditPayload{
+public class AlbumResponse extends UserDateAuditPayload {
     private Long id;
     private String title;
 
